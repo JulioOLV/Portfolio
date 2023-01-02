@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Projeto voltado a exposição do meu portifolio profissional.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "NextJS",
+    "Styled-Components",
+    "Axios"
+  ],
+  "author": "JulioOLV",
+  "license": "ISC",
+  "dependencies": {
+    "headroom.js": "^0.12.0",
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reactstrap": "^9.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.26",
+    "eslint-config-prettier": "^8.6.0",
+    "typescript": "4.9.4"
+  }
+}
