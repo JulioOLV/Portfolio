@@ -98,6 +98,22 @@ const Navigation = () => {
                                         </NavItem>
                                     )
                                 }
+                                {socialLinks.linkedin && (
+									<NavItem>
+										<NavLink
+											rel='noopener'
+											aria-label='Linkedin'
+											className='nav-link-icon'
+											href={socialLinks.linkedin}
+											target='_blank'
+										>
+											<i className='fa fa-linkedin' />
+											<span className='nav-link-inner--text d-lg-none ml-2'>
+												Linkedin
+											</span>
+										</NavLink>
+									</NavItem>
+								)}
                             </Nav>
                         </UncontrolledCollapse>
                     </Container>
