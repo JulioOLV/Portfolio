@@ -1,6 +1,6 @@
 import NextHead from 'next/head'
 
-function Head() {
+const Head = () => {
     return (
         <div>
             <NextHead>

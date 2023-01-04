@@ -1,9 +1,11 @@
 import Head from "../src/infra/components/Header";
+import Navigation from "../src/patterns/Navigation";
 
-function Home() {
+const Home = () => {
     return (
         <div>
             <Head />
+            <Navigation />
             <h1>Home</h1>
         </div>
     )
