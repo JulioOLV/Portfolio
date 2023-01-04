@@ -1,0 +1,7 @@
+body {
+    background-color: cadetblue;
+}
+
+body > div:first-child {
+    overflow-x: hidden;
+}
