@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-import { greetings, socialLinks } from '../../../portfolio';
-
 import Headrom from 'headroom.js';
 
+import { greetings, socialLinks } from '../../../portfolio';
 import {
     UncontrolledCollapse,
     NavbarBrand,
@@ -14,7 +13,7 @@ import {
     Container,
     Row,
     Col,
-} from 'reactstrap';
+} from '../../infra/components';
 
 const Navigation = () => {
     const [collapseClasses, setCollapseClasses] = useState('');
