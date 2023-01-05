@@ -16,8 +16,8 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks = {
-	linkedin: "ToDo",
-	github: "ToDo",
+	linkedin: "https://www.linkedin.com/in/julio-cc-oliveira/",
+	github: "https://github.com/JulioOLV",
 };
 
 export const skillsSection = {

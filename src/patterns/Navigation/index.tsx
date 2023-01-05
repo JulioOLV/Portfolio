@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import Headrom from 'headroom.js';
 
 import { greetings, socialLinks } from '../../../portfolio';
@@ -37,7 +36,7 @@ const Navigation = () => {
                     <Container>
                         <NavbarBrand className='mr-lg-5' href='/'>
                             <h2 className='text-white' id='nav-title'>
-                                {greetings.name}
+                                <span>{"< "}</span>{greetings.name}<span>{" />"}</span>
                             </h2>
                         </NavbarBrand>
                         <button

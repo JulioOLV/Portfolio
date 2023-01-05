@@ -16,13 +16,17 @@
 
 */
 @font-face {
-	font-family: Augestina;
-	src: url('/fonts/Agustina.otf');
+	font-family: Pumpkin;
+	src: url('/fonts/PumpkinWebPersonalUse-MVOyY.otf');
 }
 
 #nav-title {
-	font-family: Augestina;
+	font-family: Pumpkin;
 	text-transform: capitalize;
+}
+
+#nav-title > span {
+	color: #14C38E;
 }
 
 :root {
