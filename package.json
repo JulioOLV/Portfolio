@@ -27,6 +27,7 @@
     "react-dom": "^18.2.0",
     "react-easy-emoji": "^1.8.0",
     "react-lottie": "^1.2.3",
+    "react-reveal": "^1.2.2",
     "reactstrap": "^8.9.0"
   },
   "devDependencies": {
