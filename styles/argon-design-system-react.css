@@ -2780,14 +2780,14 @@ fieldset:disabled a.btn {
 
 .btn-white {
 	color: #212529;
-	background-color: #fff;
-	border-color: #fff;
+	background-color: #E8DED2;
+	border-color: #E8DED2;
 	box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .btn-white:hover {
 	color: #212529;
-	background-color: #ececec;
-	border-color: #e6e6e6;
+	background-color: #A3D2CA;
+	border-color: #A3D2CA;
 }
 .btn-white:focus,
 .btn-white.focus {
@@ -14414,7 +14414,7 @@ button.bg-lighter:focus {
 }
 
 .bg-gradient-info {
-	background: linear-gradient(35deg, #11cdef 0, #1171ef 100%) !important;
+	background: linear-gradient(35deg, #5EAAA8 0, #056676 100%) !important;
 }
 
 .bg-gradient-warning {
@@ -14709,7 +14709,7 @@ button.section-darker:focus {
 }
 
 .bg-gradient-info {
-	background: linear-gradient(35deg, #11cdef 0, #1171ef 100%) !important;
+	background: linear-gradient(35deg, #5EAAA8 0, #056676 100%) !important;
 }
 
 .bg-gradient-warning {
@@ -18163,6 +18163,7 @@ textarea[resize="horizontal"] {
 .section-shaped {
 	position: relative;
 	overflow: hidden;
+	padding-bottom: 0;
 }
 .section-shaped.section-hero:before {
 	top: 680px;

@@ -79,39 +79,25 @@ const Navigation = () => {
                                 navbar
                             >
                                 {
-                                    socialLinks?.github && (
-                                        <NavItem>
-                                            <NavLink
-                                                rel='noopener'
-                                                aria-label='Github'
-                                                className='nav-link-icon'
-                                                href={socialLinks?.github}
-                                                target='_blank'
-                                            >
-                                                <i className='fa fa-github' />
-                                                <span className='nav-link-inner--text d-lg-none ml-2'>
-                                                    Github
-                                                </span>
-                                            </NavLink>
-                                        </NavItem>
-                                    )
+                                    socialLinks.map((socialLink, index) => {
+                                        return (
+                                            <NavItem key={index}>
+                                                <NavLink
+                                                    rel='noopener'
+                                                    aria-label={socialLink.name}
+                                                    className='nav-link-icon'
+                                                    href={socialLink.url}
+                                                    target='_blank'
+                                                >
+                                                    <i className={`fa ${socialLink.icon}`} />
+                                                    <span className='nav-link-inner--text d-lg-none ml-2'>
+                                                        {socialLink.name}
+                                                    </span>
+                                                </NavLink>
+                                            </NavItem>
+                                        )
+                                    })
                                 }
-                                {socialLinks.linkedin && (
-									<NavItem>
-										<NavLink
-											rel='noopener'
-											aria-label='Linkedin'
-											className='nav-link-icon'
-											href={socialLinks.linkedin}
-											target='_blank'
-										>
-											<i className='fa fa-linkedin' />
-											<span className='nav-link-inner--text d-lg-none ml-2'>
-												Linkedin
-											</span>
-										</NavLink>
-									</NavItem>
-								)}
                             </Nav>
                         </UncontrolledCollapse>
                     </Container>

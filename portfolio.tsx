@@ -2,9 +2,9 @@ import emoji from 'react-easy-emoji';
 
 export const greetings = {
 	name: "Julio Oliveira",
-	title: "Hello World!!! Eu sou o Julio Oliveira",
+	title: "Hello World! Eu sou o Julio!!",
 	description:
-		"ToDo",
+		"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
 	resumeLink:
 		"https://bit.ly/3UF6kgN",
 };
@@ -15,10 +15,20 @@ export const openSource = {
 
 export const contact = {};
 
-export const socialLinks = {
-	linkedin: "https://www.linkedin.com/in/julio-cc-oliveira/",
-	github: "https://github.com/JulioOLV",
-};
+export const socialLinks = [
+	{
+		name: 'GitHub',
+		icon: 'fa-github',
+		url: 'https://github.com/JulioOLV',
+		color: 'github',
+	},
+	{
+		name: 'Linkedin',
+		icon: 'fa-linkedin',
+		url: 'https://www.linkedin.com/in/julio-cc-oliveira/',
+		color: 'twitter',
+	}
+];
 
 export const skillsSection = {
 	title: "What I do",
