@@ -1,7 +1,8 @@
 import React from 'react'
 import Lottie from 'react-lottie'
+import IDisplayLottie from './IDisplayLottie'
 
-const GreetingLottie = ({ animationPath }) => {
+const DisplayLottie = ({ animationPath } : IDisplayLottie) => {
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -15,4 +16,4 @@ const GreetingLottie = ({ animationPath }) => {
     )
 }
 
-export default GreetingLottie
+export default DisplayLottie

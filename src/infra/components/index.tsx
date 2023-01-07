@@ -9,6 +9,9 @@ import Nav from './Nav'
 import NavbarBrand from './NavbarBrand'
 import Header from './Header'
 import Button from './Button'
+import Fade from './Fade'
+import Icon from './Icon'
+import UncontrolledTooltip from './UncontrolledTooltip'
 
 export {
     Col,
@@ -22,4 +25,7 @@ export {
     NavbarBrand,
     Header,
     Button,
+    Fade,
+    Icon,
+    UncontrolledTooltip,
 }

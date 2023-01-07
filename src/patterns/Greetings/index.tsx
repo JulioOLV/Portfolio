@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { greetings } from '../../../portfolio'
-import GreetingLottie from '../../components/GreetingLottie'
+import DisplayLottie from '../../components/DisplayLottie'
 import SocialLinks from '../../components/SocialLinks'
 import { Button, Col, Container, Row } from '../../infra/components'
 
@@ -51,7 +51,7 @@ const Greetings = () => {
 									</div>
 								</Col>
 								<Col lg="6">
-									<GreetingLottie animationPath="/lottie/coding.json" />
+									<DisplayLottie animationPath="/lottie/coding.json" />
 								</Col>
 							</Row>
 						</div>
