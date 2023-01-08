@@ -18144,6 +18144,11 @@ textarea[resize="horizontal"] {
 	padding-bottom: 8rem;
 }
 
+#skills {
+	padding-top: 0;
+	margin-top: 0 !important;
+}
+
 .section-lg {
 	padding-top: 6rem;
 	padding-bottom: 6rem;

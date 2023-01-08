@@ -71,18 +71,18 @@ export const skillsSection = {
 				},
 				{
 					skillName: 'NodeJS',
-					fontAwesomeClassname: 'vscode-icons:nodejs',
+					fontAwesomeClassname: 'logos:nodejs',
 				},
 				{
 					skillName: 'Nestjs',
 					fontAwesomeClassname: 'logos:nestjs',
 				},
 				{
-					skillName: 'C#',
+					skillName: 'C Sharp',
 					fontAwesomeClassname: 'teenyicons:c-sharp-solid',
 				},
 				{
-					skillName: '.NET Core',
+					skillName: 'DotNET Core',
 					fontAwesomeClassname: 'logos:dotnet',
 				},
 				{
