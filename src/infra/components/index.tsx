@@ -12,6 +12,7 @@ import Button from './Button'
 import Fade from './Fade'
 import Icon from './Icon'
 import UncontrolledTooltip from './UncontrolledTooltip'
+import Progress from './Progress'
 
 export {
     Col,
@@ -28,4 +29,5 @@ export {
     Fade,
     Icon,
     UncontrolledTooltip,
+    Progress,
 }
