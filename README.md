@@ -4,6 +4,6 @@
 
 <p align="center">
   <kbd>
-    <img src="https://github.com/JulioOLV/Portifolio/blob/main/readme_pic.jpg"></img>
+    <img src="./readme_pic.png"></img>
   </kbd>
 </p>
