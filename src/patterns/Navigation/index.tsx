@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import Headrom from 'headroom.js';
+import React, { useState, useEffect } from 'react'
+import Headrom from 'headroom.js'
 
 import {
     UncontrolledCollapse,
@@ -11,18 +11,18 @@ import {
     Container,
     Row,
     Col,
-} from '../../infra/components';
+} from '../../infra/components'
 
 const Navigation = ({ greetings, socialLinks }) => {
-    const [collapseClasses, setCollapseClasses] = useState('');
+    const [collapseClasses, setCollapseClasses] = useState('')
 
-    const onNavExiting = () => setCollapseClasses('collapsing-out');
-    const onNavExited = () => setCollapseClasses('');
+    const onNavExiting = () => setCollapseClasses('collapsing-out')
+    const onNavExited = () => setCollapseClasses('')
 
     useEffect(() => {
-        let headrom = new Headrom(document.getElementById('navbar-main'));
-        headrom.init();
-    });
+        let headrom = new Headrom(document.getElementById('navbar-main'))
+        headrom.init()
+    })
 
     return (
         <>
@@ -103,7 +103,7 @@ const Navigation = ({ greetings, socialLinks }) => {
                 </Navbar>
             </header>
         </>
-    );
+    )
 }
 
 export default Navigation
