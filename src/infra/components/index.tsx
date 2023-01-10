@@ -7,7 +7,7 @@ import NavLink from './NavLink'
 import UncontrolledCollapse from './UncontrolledCollapse'
 import Nav from './Nav'
 import NavbarBrand from './NavbarBrand'
-import Header from './Header'
+import Head from './Header'
 import Button from './Button'
 import Fade from './Fade'
 import Icon from './Icon'
@@ -24,7 +24,7 @@ export {
     UncontrolledCollapse,
     Nav,
     NavbarBrand,
-    Header,
+    Head,
     Button,
     Fade,
     Icon,
