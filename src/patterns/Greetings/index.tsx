@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react'
-import { greetings } from '../../../portfolio'
 import DisplayLottie from '../../components/DisplayLottie'
 import SocialLinks from '../../components/SocialLinks'
 import { Button, Col, Container, Row } from '../../infra/components'
 
-const Greetings = () => {
+const Greetings = ({ greetings, socialLinks }) => {
     useEffect(() => {
         document.documentElement.scrollTop = 0
         document.scrollingElement.scrollTop = 0
@@ -34,7 +33,7 @@ const Greetings = () => {
 									<p className="lead text-white">
 										{greetings.description}
 									</p>
-									<SocialLinks />
+									<SocialLinks socialLinks={socialLinks} />
 									<div className="btn-wrapper my-4">
 										<Button
 											className="btn-white btn-icon mb-3 mb-sm-0 ml-1"

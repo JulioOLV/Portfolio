@@ -1,9 +1,8 @@
 import { Fragment } from 'react'
-import { skillsSection } from '../../../portfolio'
 import DisplayLottie from '../../components/DisplayLottie'
 import { Col, Container, Fade, Icon, Row, UncontrolledTooltip } from '../../infra/components'
 
-const Skills = () => {
+const Skills = ({ skillsSection }) => {
     return (
         <Container id='skills' className='text-center my-5 section section-lg'>
 			<h1 className='h1'>{skillsSection.title}</h1>

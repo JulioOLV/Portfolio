@@ -1,22 +1,21 @@
-import { SkillBars } from "../../../portfolio";
 import DisplayLottie from "../../components/DisplayLottie";
 import { Col, Container, Fade, Progress, Row } from "../../infra/components";
 
-const Proficiency = () => {
+const Proficiency = ({ skillBars }) => {
     return (
         <Container className="section section-lg">
 			<Fade bottom duration={2000} >
 				<Row>
 					<Col lg="6">
 						<h1 className="h1">Proficiency</h1>
-						{SkillBars.map((skill) => {
+						{skillBars.map((skill) => {
 							return (
 								<div
 									className="progress-info"
-									key={skill.Stack}
+									key={skill.stack}
 								>
 									<div className="progress-label">
-										<span>{skill.Stack}</span>
+										<span>{skill.stack}</span>
 									</div>
 									<div className="progress-percentage">
 										<span>{skill.progressPercentage}%</span>
@@ -26,7 +25,7 @@ const Proficiency = () => {
 										value={skill.progressPercentage}
 										color="info"
 										role="progressbar"
-										aria-label={skill.Stack}
+										aria-label={skill.stack}
 									/>
 								</div>
 							);

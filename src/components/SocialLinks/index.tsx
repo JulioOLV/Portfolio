@@ -1,7 +1,6 @@
-import { socialLinks } from "../../../portfolio"
 import { Button } from "../../infra/components"
 
-const SocialLinks = () => {
+const SocialLinks = ({ socialLinks }) => {
     return (
         <div className="btn-wrapper text-lg">
             {

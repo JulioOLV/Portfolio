@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Headrom from 'headroom.js';
 
-import { greetings, socialLinks } from '../../../portfolio';
 import {
     UncontrolledCollapse,
     NavbarBrand,
@@ -14,7 +13,7 @@ import {
     Col,
 } from '../../infra/components';
 
-const Navigation = () => {
+const Navigation = ({ greetings, socialLinks }) => {
     const [collapseClasses, setCollapseClasses] = useState('');
 
     const onNavExiting = () => setCollapseClasses('collapsing-out');
