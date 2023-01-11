@@ -4,6 +4,6 @@ export default interface IUncontrolledCollapse {
     className?: string;
     onExiting?: () => void;
     onExited?: () => void;
-    children: any;
+    children: React.ReactNode;
     otherProps?: any;
 }

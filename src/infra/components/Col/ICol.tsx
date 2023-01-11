@@ -4,6 +4,6 @@ export default interface ICol {
     className?: string;
     xs?: ColumnProps;
     lg?: ColumnProps;
-    children: any;
+    children: React.ReactNode;
     otherProps?: any;
 }

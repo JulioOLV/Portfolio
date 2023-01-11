@@ -1,5 +1,5 @@
 export default interface IRow {
     className?: string;
-    children: any;
+    children: React.ReactNode;
     otherProps?: any;
 }

@@ -3,6 +3,6 @@ export default interface INavLink {
     className?: string;
     href?: string;
     target?: React.HTMLAttributeAnchorTarget;
-    children: any;
+    children: React.ReactNode;
     otherProps?: any;
 }

@@ -1,4 +1,4 @@
 export default interface INavItem {
     otherProps?: any;
-    children: any;
+    children: React.ReactNode;
 }

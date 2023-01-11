@@ -4,6 +4,6 @@ export default interface IFade {
     top?: boolean;
     bottom?: boolean;
     duration?: number;
-    children?: any;
+    children?: React.ReactNode;
     otherProps?: any;
 }

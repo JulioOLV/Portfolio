@@ -1,6 +1,6 @@
 export default interface IContainer {
     className?: string;
-    children: any;
+    children: React.ReactNode;
     id?: string;
     otherProps?: any;
 }

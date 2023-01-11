@@ -1,4 +1,5 @@
 import { Head } from '../../infra/components'
+import Experience from '../../patterns/Experience'
 import Greetings from '../../patterns/Greetings'
 import Navigation from '../../patterns/Navigation'
 import Proficiency from '../../patterns/Proficiency'
@@ -18,6 +19,7 @@ const Home = ({ data }) => {
             />
             <Skills skillsSection={data.skillsSection} />
             <Proficiency skillBars={data.skillBars} />
+            <Experience experience={data.experience} />
         </>
     )
 }

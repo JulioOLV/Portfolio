@@ -2,6 +2,6 @@ export default interface INavbar {
     className?: string;
     expand?: string;
     id?: string;
-    children: any;
+    children: React.ReactNode;
     otherProps?: any;
 }

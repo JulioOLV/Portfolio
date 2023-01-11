@@ -1,6 +1,6 @@
 export default interface INav {
     className?: string;
     navbar?: boolean;
-    children: any;
+    children: React.ReactNode;
     otherProps?: any;
 }

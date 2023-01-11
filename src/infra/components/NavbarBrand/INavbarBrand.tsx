@@ -1,6 +1,6 @@
 export default interface INavbarBrand {
     className?: string;
     href?: string;
-    children: any;
+    children: React.ReactNode;
     otherProps?: any;
 }
