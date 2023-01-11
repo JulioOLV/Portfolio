@@ -13,6 +13,11 @@ import Fade from './Fade'
 import Icon from './Icon'
 import UncontrolledTooltip from './UncontrolledTooltip'
 import Progress from './Progress'
+import Card from './Card'
+import CardBody from './CardBody'
+import CardTitle from './CardTitle'
+import CardSubtitle from './CardSubtitle'
+import CardText from './CardText'
 
 export {
     Col,
@@ -30,4 +35,9 @@ export {
     Icon,
     UncontrolledTooltip,
     Progress,
+    Card,
+    CardBody,
+    CardTitle,
+    CardSubtitle,
+    CardText,
 }
