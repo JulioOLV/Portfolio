@@ -8,7 +8,8 @@
     "build": "next build",
     "export": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
   },
   "keywords": [
     "NextJS",
@@ -33,7 +34,11 @@
   "devDependencies": {
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
+    "eslint": "^8.31.0",
+    "eslint-config-next": "13.1.1",
     "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.2",
     "typescript": "4.9.4"
   }
 }
