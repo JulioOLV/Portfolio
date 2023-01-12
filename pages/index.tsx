@@ -5,9 +5,16 @@ export async function getStaticProps() {
     const data = await fetch(PORTFOLIO_INFO_PATH)
         .then(async response => await response.json())
         .then(converted => converted.data)
+
+    const GITHUB_URI = 'https://api.github.com/search/repositories?q=user:JulioOLV%20topic:list-in-portfolio'
+    const githubData = await fetch(GITHUB_URI)
+        .then(async response => await response.json())
+        .then(converted => converted.items)
+    
     return {
         props: {
-            data
+            data,
+            githubData
         },
     }
 }
