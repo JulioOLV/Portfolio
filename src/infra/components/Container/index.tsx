@@ -1,16 +1,12 @@
-import {
-    Container as ReactstrapContainer,
-} from 'reactstrap';
+import { Container as ReactstrapContainer } from 'reactstrap';
 import IContainer from './IContainer';
 
-const Container = ({ ...otherProps } : IContainer) => {
-    return (
-        <ReactstrapContainer
-            {...otherProps}
-        >
-            {otherProps.children}
-        </ReactstrapContainer>
-    )
-}
+const Container = ({ ...otherProps }: IContainer) => {
+  return (
+    <ReactstrapContainer {...otherProps}>
+      {otherProps.children}
+    </ReactstrapContainer>
+  );
+};
 
-export default Container
+export default Container;

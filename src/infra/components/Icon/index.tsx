@@ -1,14 +1,8 @@
-import { Icon as IconifyIcon } from '@iconify/react'
-import IIcon from './IIcon'
+import { Icon as IconifyIcon } from '@iconify/react';
+import IIcon from './IIcon';
 
-const Icon = ({ icon, ...otherProps } : IIcon) => {
-    return (
-        <IconifyIcon
-            icon={icon}
-            {...otherProps}
-        >
-        </IconifyIcon>
-    )
-}
+const Icon = ({ icon, ...otherProps }: IIcon) => {
+  return <IconifyIcon icon={icon} {...otherProps}></IconifyIcon>;
+};
 
-export default Icon
+export default Icon;

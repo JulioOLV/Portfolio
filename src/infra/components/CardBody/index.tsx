@@ -1,12 +1,12 @@
-import { CardBody as ReactstrapCardBody } from 'reactstrap'
-import ICardBody from './ICardBody'
+import { CardBody as ReactstrapCardBody } from 'reactstrap';
+import ICardBody from './ICardBody';
 
-const CardBody = ({ ...otherProps } : ICardBody) => {
-    return (
-        <ReactstrapCardBody {...otherProps}>
-            {otherProps.children}
-        </ReactstrapCardBody>
-    )
-}
+const CardBody = ({ ...otherProps }: ICardBody) => {
+  return (
+    <ReactstrapCardBody {...otherProps}>
+      {otherProps.children}
+    </ReactstrapCardBody>
+  );
+};
 
-export default CardBody
+export default CardBody;

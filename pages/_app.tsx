@@ -5,7 +5,7 @@ import '../styles/vendor/font-awesome/css/font-awesome.min.css';
 import '../styles/vendor/nucleo/css/nucleo.css';
 
 const MyApp = ({ Component, pageProps }) => {
-    return <Component {...pageProps} />
-}
+  return <Component {...pageProps} />;
+};
 
-export default MyApp
+export default MyApp;

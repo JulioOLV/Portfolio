@@ -1,8 +1,8 @@
-import { ElementType } from 'react'
+import { ElementType } from 'react';
 
 export default interface ICardTitle {
-    tag?: ElementType<any>;
-    className: string;
-    children: string;
-    otherProps?: any;
+  tag?: ElementType<any>;
+  className: string;
+  children: string;
+  otherProps?: any;
 }
