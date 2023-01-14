@@ -1,12 +1,27 @@
+import dynamic from 'next/dynamic';
 import { Head } from '../../infra/components';
-import Experience from '../../patterns/Experience';
-import Greetings from '../../patterns/Greetings';
-import Navigation from '../../patterns/Navigation';
-import Proficiency from '../../patterns/Proficiency';
-import Projects from '../../patterns/Projects';
-import Skills from '../../patterns/Skills';
+const Experience = dynamic(() => import('../../patterns/Experience'), {
+  ssr: false,
+});
+const Greetings = dynamic(() => import('../../patterns/Greetings'), {
+  ssr: false,
+});
+const Navigation = dynamic(() => import('../../patterns/Navigation'), {
+  ssr: false,
+});
+const Proficiency = dynamic(() => import('../../patterns/Proficiency'), {
+  ssr: false,
+});
+const Projects = dynamic(() => import('../../patterns/Projects'), {
+  ssr: false,
+});
+const Skills = dynamic(() => import('../../patterns/Skills'), {
+  ssr: false,
+});
+import IHome from './IHome';
+import GithubProfileCard from '../../patterns/GithubProfileCard';
 
-const Home = ({ data, githubData }) => {
+const Home = ({ data, githubRepoData, githubProfileData }: IHome) => {
   return (
     <>
       <Head />
@@ -15,7 +30,8 @@ const Home = ({ data, githubData }) => {
       <Skills skillsSection={data.skillsSection} />
       <Proficiency skillBars={data.skillBars} />
       <Experience experience={data.experience} />
-      <Projects githubData={githubData} />
+      <Projects githubData={githubRepoData} />
+      <GithubProfileCard profile={githubProfileData} />
     </>
   );
 };
