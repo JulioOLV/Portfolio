@@ -1,25 +1,12 @@
-import dynamic from 'next/dynamic';
 import { Head } from '../../infra/components';
-const Experience = dynamic(() => import('../../patterns/Experience'), {
-  ssr: false,
-});
-const Greetings = dynamic(() => import('../../patterns/Greetings'), {
-  ssr: false,
-});
-const Navigation = dynamic(() => import('../../patterns/Navigation'), {
-  ssr: false,
-});
-const Proficiency = dynamic(() => import('../../patterns/Proficiency'), {
-  ssr: false,
-});
-const Projects = dynamic(() => import('../../patterns/Projects'), {
-  ssr: false,
-});
-const Skills = dynamic(() => import('../../patterns/Skills'), {
-  ssr: false,
-});
-import IHome from './IHome';
+import Navigation from '../../patterns/Navigation';
+import Greetings from '../../patterns/Greetings';
+import Skills from '../../patterns/Skills';
+import Proficiency from '../../patterns/Proficiency';
+import Experience from '../../patterns/Experience';
+import Projects from '../../patterns/Projects';
 import GithubProfileCard from '../../patterns/GithubProfileCard';
+import IHome from './IHome';
 
 const Home = ({ data, githubRepoData, githubProfileData }: IHome) => {
   return (

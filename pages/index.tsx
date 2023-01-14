@@ -1,4 +1,9 @@
-import Home from '../src/screens/Home';
+import dynamic from 'next/dynamic';
+
+const Home = dynamic(() => import('../src/screens/Home'), {
+  ssr: false,
+  loading: () => <div>Loading...</div>,
+});
 
 export async function getStaticProps() {
   const PORTFOLIO_INFO_PATH =
@@ -7,15 +12,16 @@ export async function getStaticProps() {
     .then(async (response) => await response.json())
     .then((converted) => converted.data);
 
-  const GITHUB_URI =
+  const GITHUB_REPOS_URI =
     'https://api.github.com/search/repositories?q=user:JulioOLV%20topic:list-in-portfolio';
-  const githubRepoData = await fetch(GITHUB_URI)
+  const githubRepoData = await fetch(GITHUB_REPOS_URI)
     .then(async (response) => await response.json())
     .then((converted) => converted.items);
 
-  const githubProfileData = await fetch(
-    'https://api.github.com/users/JulioOLV'
-  ).then((res) => res.json());
+  const GITHUB_PROFILE_URI = 'https://api.github.com/users/JulioOLV';
+  const githubProfileData = await fetch(GITHUB_PROFILE_URI).then(
+    async (res) => await res.json()
+  );
 
   return {
     props: {
