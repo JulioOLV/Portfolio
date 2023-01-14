@@ -1,9 +1,10 @@
 import { Button } from '../../infra/components';
+import ISocialLinks from './ISocialLinks';
 
-const SocialLinks = ({ socialLinks }) => {
+const SocialLinks = ({ socialLinks }: ISocialLinks) => {
   return (
     <div className="btn-wrapper text-lg">
-      {socialLinks.map((socialLink, index) => {
+      {socialLinks?.map((socialLink, index) => {
         return (
           <Button
             className="btn-icon-only rounded-circle ml-1"
