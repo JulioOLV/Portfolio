@@ -9,14 +9,19 @@ export async function getStaticProps() {
 
   const GITHUB_URI =
     'https://api.github.com/search/repositories?q=user:JulioOLV%20topic:list-in-portfolio';
-  const githubData = await fetch(GITHUB_URI)
+  const githubRepoData = await fetch(GITHUB_URI)
     .then(async (response) => await response.json())
     .then((converted) => converted.items);
+
+  const githubProfileData = await fetch(
+    'https://api.github.com/users/JulioOLV'
+  ).then((res) => res.json());
 
   return {
     props: {
       data,
-      githubData,
+      githubRepoData,
+      githubProfileData,
     },
   };
 }
