@@ -7,7 +7,7 @@ const Proficiency = ({ skillBars }) => {
       <Fade bottom duration={2000}>
         <Row>
           <Col lg="6">
-            <h1 className="h1">Proficiency</h1>
+            <h1 className="h1">Proficiência</h1>
             {skillBars.map((skill) => {
               return (
                 <div className="progress-info" key={skill.stack}>
