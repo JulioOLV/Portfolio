@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import {
   Card,
   CardBody,
@@ -17,7 +19,7 @@ const ExperienceCard = ({ data }) => {
           className="shadow-lg--hover mb-3 shadow border-0 text-center rounded"
         >
           <CardBody>
-            <img
+            <Image
               src={data.companylogo}
               style={{
                 objectFit: 'cover',
@@ -26,10 +28,10 @@ const ExperienceCard = ({ data }) => {
                 top: '7rem',
                 marginLeft: 'auto',
                 marginRight: 'auto',
-                width: '8rem',
-                height: '8rem',
                 borderRadius: '50%',
               }}
+              width={128}
+              height={128}
               className="shadow mb-3"
               alt={data.companylogo}
             />
