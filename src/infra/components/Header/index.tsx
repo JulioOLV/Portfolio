@@ -1,11 +1,9 @@
 import NextHead from 'next/head';
 
-const Head = () => {
+const Head = ({ ...otherProps }) => {
   return (
     <div>
-      <NextHead>
-        <title>JulioOLV</title>
-      </NextHead>
+      <NextHead>{otherProps.children}</NextHead>
     </div>
   );
 };
