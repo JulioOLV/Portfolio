@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /*
+Host: portifolio-sigma-orcin.vercel.app

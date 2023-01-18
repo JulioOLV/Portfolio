@@ -1,0 +1,21 @@
+{
+  "short_name": "Portfolio",
+  "name": "Julio Oliveira Portfolio",
+  "description": "Um Dev apaixonado por resolver problemas complexos com tecnologia! Aspirante a Data Science nas horas vagas.",
+  "icons": [
+    {
+      "src": "./favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#5EAAA8",
+  "background_color": "#5EAAA8"
+}
