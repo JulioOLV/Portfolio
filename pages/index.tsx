@@ -26,6 +26,7 @@ export async function getStaticProps() {
       githubRepoData,
       githubProfileData,
     },
+    revalidate: 60 * 60 * 24 * 7, // 7 days
   };
 }
 
